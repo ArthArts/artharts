@@ -7,11 +7,28 @@
 <style>
 
 body {
-  background-color: #2f2f2f;
-  background-image: url("");
+  background-color: #7d7d7d;
+
+  /* imagem de fundo REAL */
+  background-image: url("https://wallpaperaccess.com/full/1540003.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
   color: #00ff00;
-  font-family: "arial", cursive;
+  font-family: Arial, cursive;
   text-align: center;
+}
+
+/* marquee */
+.marquee-up {
+  border: 2px inset white;
+  background: #c0c0c0;
+  color: black;
+  padding: 4px;
+  margin: 10px;
+  font-family: "MS Sans Serif";
 }
 
 /* caixa principal */
@@ -19,7 +36,7 @@ body {
   background-color: #121212;
   border: 4px ridge #ff0000;
   width: 600px;
-  margin: auto;
+  margin: 20px auto;
   padding: 15px;
 }
 
@@ -44,76 +61,194 @@ a:hover {
   color: yellow;
 }
 
+/* botão estilo Windows 98 */
+.botao-win98{
+
+  background:#c0c0c0;
+  border:2px solid;
+  border-color:white black black white;
+
+  padding:6px 14px;
+
+  font-family:"MS Sans Serif";
+  font-size:14px;
+
+  cursor:pointer;
+
+}
+
+.botao-win98:active{
+  border-color:black white white black;
+}
+
+
+/* janela */
+.window{
+
+  display:none;
+
+  position:absolute;
+  top:150px;
+  left:100px;
+
+  width:300px;
+
+  border:2px solid black;
+
+  background:#c0c0c0;
+
+  box-shadow:3px 3px black;
+
+}
+
+
+/* barra superior azul */
+.title-bar{
+
+  background:linear-gradient(to right,#000080,#1084d0);
+
+  color:white;
+
+  padding:3px;
+
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+}
+
+
+/* botão X */
+.close{
+
+  background:#c0c0c0;
+
+  border:2px solid;
+
+  border-color:white black black white;
+
+  width:20px;
+
+  height:20px;
+
+  text-align:center;
+
+  cursor:pointer;
+
+  font-weight:bold;
+
+}
+
+.close:active{
+  border-color:black white white black;
+}
+
+
+/* conteúdo */
+.content{
+  padding:10px;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<marquee class="marquee-up" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()" <marquee>
+<marquee class="marquee-up" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
 💾 Bem-vindo ao Arty.exe — Sistema carregado com sucesso
 </marquee>
 
-<style>
+<div class="main">
 
-.marquee-up {
+<h1>Titulo</h1>
 
-  border: 2px inset white;
+<button class="botao-win98" onclick="abrirJanela()">
+Abrir galeria.exe
+</button>
 
-  background: #c0c0c0;
+<div id="janela" class="window">
 
-  color: black;
+  <div class="title-bar">
 
-  padding: 4px;
-  margin: 10px;
+    <span>galeria.exe</span>
 
-  font-family: "MS Sans Serif";
+    <div class="close" onclick="fecharJanela()">
+      X
+    </div>
 
-}
+  </div>
 
-</style>
 
-<img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyN3VlbGxudWhsb2NkMWY5cncxZmJybm9yZDk0dGd1cWg3cnM2Njh2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xAKhG9iFXynDh2LEg5/giphy.gif" width="100" style="position:top:0px;">
+  <div class="content">
 
-<div class="main" class="window" style="position:top:200px;">
-<h1>Titulo<h1>
-<br>
+    Bem-vindo ao Arty.exe :3
+
+    <br><br>
+
+    <img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="150">
+
+  </div>
+
+</div>
+
+<img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyN3VlbGxudWhsb2NkMWY5cncxZmJybm9yZDk0dGd1cWg3cnM2Njh2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xAKhG9iFXynDh2LEg5/giphy.gif" width="100">
 
 <img src="https://i.imgur.com/5V0bY0B.gif">
+
 <p>Site em construção!</p>
 
-<br>
-
 <p>
-Visitantes:
-<br>
+Visitantes:<br>
 
-<img>
+<img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyOGRieDV3MHg0eHd5ODVscGZyMnBxcWx1Y2h3cGFpbHV3MHlzMmc0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/abhMNHCMnbhV7Ad0Ij/giphy.gif" width="200">
 
-<br>
+</p>
 
 <a href="#">Meu Instagram (em breve)</a>
-
-<br>
 
 <p>© Arth 2026</p>
 
 </div>
 
-<br>
 
-<div class="main" class="window" style="position:top:650px">
+<div class="main">
+
 <h1>🎨 Arty's Art Gallery 🎨</h1>
 
 <p>Site oficial • Desde 2026</p>
 
-<img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="200"">
 <img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="200">
-<img src="https://media4.giphy.com/media/v1.Y2lkPTZjMDliOTUyazJwanJkMWN1YjUzcHNuY3Y0eDdvNXY4NTJxZDd3b3k5ZDBqcno2diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wr7oA0rSjnWuiLJOY5/giphy.gif" width="200">
-<img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyOGZzZ2sya3piZHg1YWxpbGcwMjMzYnZoZm50d3hkd2RtN2M5cXJxbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YhYgIyRd7dETRsOtK6/giphy.gif" width="200">
-<br>
+
+<img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="200">
+
+<img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="200">
+
+<img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="200">
 
 </div>
+
+<div class="main">
+
+</div>
+
+<script>
+
+function abrirJanela(){
+
+  document.getElementById("janela").style.display="block";
+
+}
+
+function fecharJanela(){
+
+  document.getElementById("janela").style.display="none";
+
+}
+
+</script>
 
 </body>
 </html>
