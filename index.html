@@ -1,254 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<title>Arty's Art Gallery</title>
+	<meta charset="UTF-8">
+	<title>Meus Favoritos</title>
+	<link rel="icon" type="image/x-icon" href="IMG_1007.jpeg">
 
-<style>
 
-body {
-  background-color: #7d7d7d;
 
-  /* imagem de fundo REAL */
-  background-image: url("https://wallpaperaccess.com/full/1540003.jpg");
-
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-
-  color: #00ff00;
-  font-family: Arial, cursive;
-  text-align: center;
+	<style>
+	h1 {
+		color: white;
+		font-family: sans-serif;
 }
 
-/* marquee */
-.marquee-up {
-  border: 2px inset white;
-  background: #c0c0c0;
-  color: black;
-  padding: 4px;
-  margin: 10px;
-  font-family: "MS Sans Serif";
+	body {
+		background-color: #2c3e50;
+		background-image: 					url("https://wallpaperaccess.com/full/1540003.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		color: white;              
+		font-family: Arial, sans-serif;
+		padding: 20px;
+}		
+
+	main, .main {
+		background-color: rgba(44, 62, 80, 0.7);
+		border: 3px solid #3498db;
+		border-radius: 15px;
+		padding: 20px;
+		list-style-position: inside; 
 }
 
-/* caixa principal */
-.main {
-  background-color: #121212;
-  border: 4px ridge #ff0000;
-  width: 600px;
-  margin: 20px auto;
-  padding: 15px;
+	botao, .botao {
+		background-color: rgba(25, 25, 25, 1);
+		border: 3px solid #cfcfcf;
+		border-radius: 15px;
+		padding: 20px;
+		list-style-position: inside;
 }
 
-/* título */
-h1 {
-  color: yellow;
-  text-shadow: 2px 2px red;
-}
-
-/* imagens */
-img {
-  border: 3px solid cyan;
-  margin: 10px;
-}
-
-/* links */
-a {
-  color: cyan;
-}
-
-a:hover {
-  color: yellow;
-}
-
-/* botão estilo Windows 98 */
-.botao-win98{
-
-  background:#c0c0c0;
-  border:2px solid;
-  border-color:white black black white;
-
-  padding:6px 14px;
-
-  font-family:"MS Sans Serif";
-  font-size:14px;
-
-  cursor:pointer;
-
-}
-
-.botao-win98:active{
-  border-color:black white white black;
-}
-
-
-/* janela */
-.window{
-
-  display:none;
-
-  position:absolute;
-  top:150px;
-  left:100px;
-
-  width:300px;
-
-  border:2px solid black;
-
-  background:#c0c0c0;
-
-  box-shadow:3px 3px black;
-
-}
-
-
-/* barra superior azul */
-.title-bar{
-
-  background:linear-gradient(to right,#000080,#1084d0);
-
-  color:white;
-
-  padding:3px;
-
-  display:flex;
-
-  justify-content:space-between;
-
-  align-items:center;
-
-}
-
-
-/* botão X */
-.close{
-
-  background:#c0c0c0;
-
-  border:2px solid;
-
-  border-color:white black black white;
-
-  width:20px;
-
-  height:20px;
-
-  text-align:center;
-
-  cursor:pointer;
-
-  font-weight:bold;
-
-}
-
-.close:active{
-  border-color:black white white black;
-}
-
-
-/* conteúdo */
-.content{
-  padding:10px;
-}
-
-</style>
-
+	</style>
 </head>
-
 <body>
+	<header>
+		<h1>Coisas que eu curto:</h1>
+	</header>
+<main>
+		<section id="sobre min">
 
-<marquee class="marquee-up" scrollamount="5" onmouseover="this.stop()" onmouseout="this.start()">
-💾 Bem-vindo ao Arty.exe — Sistema carregado com sucesso
-</marquee>
+		<ul>
+		<li>Ouvir música</li>
+ 		<li>Codar no GitHub</li>
+		<li>Jogar videogame</li>
+		<li>Assistir séries</li>
+		</ul>
+		</section>
+		
+</main>
 
-<div class="main">
-
-<h1>Titulo</h1>
-
-<button class="botao-win98" onclick="abrirJanela()">
-Abrir galeria.exe
-</button>
-
-<div id="janela" class="window">
-
-  <div class="title-bar">
-
-    <span>galeria.exe</span>
-
-    <div class="close" onclick="fecharJanela()">
-      X
+<footer>
+    <div class="main"> <p>Meu site está ficando mais organizado!</p>
     </div>
+</footer>
 
-  </div>
-
-
-  <div class="content">
-
-    Bem-vindo ao Arty.exe :3
-
-    <br><br>
-
-    <img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="150">
-
-  </div>
-
-</div>
-
-<img src="https://media0.giphy.com/media/v1.Y2lkPTZjMDliOTUyN3VlbGxudWhsb2NkMWY5cncxZmJybm9yZDk0dGd1cWg3cnM2Njh2aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xAKhG9iFXynDh2LEg5/giphy.gif" width="100">
-
-<img src="https://i.imgur.com/5V0bY0B.gif">
-
-<p>Site em construção!</p>
-
-<p>
-Visitantes:<br>
-
-<img src="https://media2.giphy.com/media/v1.Y2lkPTZjMDliOTUyOGRieDV3MHg0eHd5ODVscGZyMnBxcWx1Y2h3cGFpbHV3MHlzMmc0YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/abhMNHCMnbhV7Ad0Ij/giphy.gif" width="200">
-
-</p>
-
-<a href="#">Meu Instagram (em breve)</a>
-
-<p>© Arth 2026</p>
-
-</div>
-
-
-<div class="main">
-
-<h1>🎨 Arty's Art Gallery 🎨</h1>
-
-<p>Site oficial • Desde 2026</p>
-
-<img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="200">
-
-<img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="200">
-
-<img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="200">
-
-<img src="https://raw.githubusercontent.com/ArthArts/artharts/main/IMG_1007.jpeg" width="200">
-
-</div>
-
-<div class="main">
-
-</div>
-
-<script>
-
-function abrirJanela(){
-
-  document.getElementById("janela").style.display="block";
-
-}
-
-function fecharJanela(){
-
-  document.getElementById("janela").style.display="none";
-
-}
-
-</script>
 
 </body>
 </html>
