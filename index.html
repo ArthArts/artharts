@@ -2,15 +2,38 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
+	<div class="main">
 	<title>Meus Favoritos</title>
+	</div>
 	<link rel="icon" type="image/x-icon" href="IMG_1007.jpeg">
 
 
 
 	<style>
 	h1 {
-		color: white;
+		color: yellow;
+		text-shadow: 2px 2px red;
 		font-family: sans-serif;
+}
+
+	p {
+		font-size: 25px
+}
+
+	li {
+		list-style-position: inside;
+		font-size: 30px;
+		align-items: center;
+		margin-bottom: 5px;
+}
+
+	.marquee-up {
+		border: 2px inset white;
+		background: #c0c0c0;
+		color: black;
+		padding: 4px;
+		margin: 10px;
+		font-family: "MS Sans Serif";
 }
 
 	body {
@@ -19,22 +42,63 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		color: white;              
-		font-family: Arial, sans-serif;
+		color: white;
 		padding: 20px;
-}		
+		font-family: Arial, sans-serif;
+}
+
+	img {
+		width: 200px;
+		height: 200px;
+		object-fit: cover;
+		border: 4px ridge #ff0000;
+}
+
+	
+
+	.container-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 20px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+		padding: 5px;
+		gap: 20px;
+}
+
+	.container-item:nth-of-type(even) {
+		flex-direction: row-reverse;
+}
+
+	.container-item:nth-of-type(even) img {
+		margin-left: 20px;
+		margin-right: 0;
+}
+
+	.container-item img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: pointer;
+}
+
+	.container-item img:hover {
+		transform: scale(1.1);
+		box-shadow: 0 0 20px rgba(255, 255, 0, 0.6);
+		z-index: 1;
+}
 
 	main, .main {
-		background-color: rgba(44, 62, 80, 0.7);
-		border: 3px solid #3498db;
+		background-color: rgba(44, 62, 80, 0.8);
+		border: 4px ridge #ff0000;
 		border-radius: 15px;
 		padding: 20px;
-		list-style-position: inside; 
+		list-style-position: inside;
+		margin: 20px auto;
+		text-shadow: 2px 2px gray;
 }
 
 	botao, .botao {
+		display: inline-block;
 		background-color: rgba(25, 25, 25, 1);
-		border: 3px solid #cfcfcf;
+.	border: 3px solid #cfcfcf;
 		border-radius: 15px;
 		padding: 20px;
 		list-style-position: inside;
@@ -43,27 +107,76 @@
 	</style>
 </head>
 <body>
-	<header>
+	<div class="main">
+		<header>
 		<h1>Coisas que eu curto:</h1>
-	</header>
+		</header>
+	</div>
 <main>
+	<div class="container-item">
+	<img src="https://i.etsystatic.com/16534411/r/il/c48c12/4558924237/il_850x675.4558924237_a4yt.jpg">
 		<section id="sobre min">
-
-		<ul>
-		<li>Ouvir música</li>
- 		<li>Codar no GitHub</li>
-		<li>Jogar videogame</li>
-		<li>Assistir séries</li>
-		</ul>
+			<ul>
+			<li>Ouvir música</li>
+ 			<li>Desenhar</li>
+			<li>Jogar videogame</li>
+			<li>Assistir séries</li>
+			</ul>
 		</section>
+	</div>
+	<div class="container-item">
+		<img src="https://i.etsystatic.com/16534411/r/il/c48c12/4558924237/il_850x675.4558924237_a4yt.jpg">
+		<section id="Amigos">
+			<ul>
+			<li>Ouvir música</li>
+ 			<li>Desenhar</li>
+			<li>Jogar videogame</li>
+			<li>Assistir séries</li>
+			</ul>
+		</section>
+	</div>
+	<div class="container-item">
+	<img src="https://i.etsystatic.com/16534411/r/il/c48c12/4558924237/il_850x675.4558924237_a4yt.jpg">
+		<section id="Amigos2">
+			<ul>
+			<li>Ouvir música</li>
+ 			<li>Desenhar</li>
+			<li>Jogar videogame</li>
+			<li>Assistir séries</li>
+			</ul>
+		</section>
+	</div>
+	<div class="container-item">
+	<img src="https://i.etsystatic.com/16534411/r/il/c48c12/4558924237/il_850x675.4558924237_a4yt.jpg">
+		<section id="Amigos3">
+			<ul>
+			<li>Ouvir música</li>
+ 			<li>Desenhar</li>
+			<li>Jogar videogame</li>
+			<li>Assistir séries</li>
+			</ul>
+		</section>
+	</div>
 		
 </main>
 
 <footer>
-    <div class="main"> <p>Meu site está ficando mais organizado!</p>
-    </div>
+	<div class="main"> <p>Meu site está ficando mais organizado!</p>
+	</div>
 </footer>
 
-
+	<div class="botao">
+		<div class="container-item">
+		<img src="https://i.etsystatic.com/16534411/r/il/c48c12/4558924237/il_850x675.4558924237_a4yt.jpg">
+			<section id="Amigos3">
+			<ul>
+			<li>Ouvir música</li>
+ 			<li>Desenhar</li>
+			<li>Jogar videogame</li>
+			<li>Assistir séries</li>
+			</ul>
+			</section>
+		</div>
+	</div>
 </body>
 </html>
